@@ -1,0 +1,15 @@
+﻿<Properties StartupConfiguration="{3B90D658-146F-678F-7209-630C3AD7FAB3}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SampleGame/Scripts/GameManager.cs">
+    <Files>
+      <File FileName="Assets/SampleGame/Scripts/GoalEffect.cs" Line="32" Column="6" />
+      <File FileName="Assets/SampleGame/Scripts/GameManager.cs" Line="66" Column="10" />
+      <File FileName="Assets/SampleGame/Scripts/Objective.cs" Line="24" Column="38" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
