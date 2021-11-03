@@ -7,9 +7,17 @@ namespace LevelManagement
 {
     public class MainMenu : Menu<MainMenu>
     {
+        [SerializeField] float _playDelay = 0.5f;
+        
         public void OnPlayPressed()
         {
+            StartCoroutine(OnPlayPressedRoutine());
+        }
+
+        IEnumerator OnPlayPressedRoutine()
+        {
             LevelLoader.LoadNextLevel();
+            yield return new WaitForSeconds(_playDelay);
             GameMenu.Open();
         }
 

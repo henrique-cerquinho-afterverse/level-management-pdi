@@ -68,6 +68,10 @@
     <Compile Include="Assets\LevelManagement\Scripts\Menus\PauseMenu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\SettingsMenu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\WinScreen.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\SplashScreen.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\TransitionFader.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Utilities\DontDestroyOnLoad.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Utilities\ScreenFader.cs" />
     <Compile Include="Assets\SampleGame\Scripts\GameManager.cs" />
     <Compile Include="Assets\SampleGame\Scripts\GoalEffect.cs" />
     <Compile Include="Assets\SampleGame\Scripts\Objective.cs" />

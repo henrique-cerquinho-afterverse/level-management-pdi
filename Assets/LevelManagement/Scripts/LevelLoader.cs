@@ -7,7 +7,7 @@ namespace LevelManagement
 {
     public class LevelLoader : MonoBehaviour
     {
-        private static int mainMenuIndex = 0;
+        private static int mainMenuIndex = 1;
         
         public static void LoadLevel(string levelName)
         {
@@ -29,7 +29,7 @@ namespace LevelManagement
         public static void LoadNextLevel()
         {
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
-            int nextSceneIndex = 0;
+            int nextSceneIndex = 1;
             int sceneCount = SceneManager.sceneCountInBuildSettings;
             if (currentSceneIndex + 1 <= sceneCount - 1) {
                 nextSceneIndex = currentSceneIndex + 1;

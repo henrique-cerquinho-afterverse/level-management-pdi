@@ -8,12 +8,12 @@ namespace LevelManagement
     [RequireComponent(typeof(Canvas))]
     public class MenuManager : MonoBehaviour
     {
-        [SerializeField] MainMenu mainMenuPrefab;
-        [SerializeField] SettingsMenu settingsMenuPrefab;
-        [SerializeField] CreditsScreen creditsMenuPrefab;
-        [SerializeField] GameMenu gameMenuPrefab;
-        [SerializeField] PauseMenu pauseMenuPrefab;
-        [SerializeField] WinScreen winScreenPrefab;
+        [SerializeField] private MainMenu mainMenuPrefab;
+        [SerializeField] private SettingsMenu settingsMenuPrefab;
+        [SerializeField] private CreditsScreen creditsMenuPrefab;
+        [SerializeField] private GameMenu gameMenuPrefab;
+        [SerializeField] private PauseMenu pauseMenuPrefab;
+        [SerializeField] private WinScreen winScreenPrefab;
 
         [SerializeField]
         private Transform _menuParent;
@@ -59,8 +59,8 @@ namespace LevelManagement
 
             // finds fields dynamically from the given type (in this case, MenuManager) and iterates over the fields
             // and their values
-            // BindingFlags myFlags = null;
-            FieldInfo[] fields = this.GetType().GetFields();
+            BindingFlags myFlags = BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.DeclaredOnly;
+            FieldInfo[] fields = this.GetType().GetFields(myFlags);
 
             foreach (FieldInfo field in fields)
             {
