@@ -760,8 +760,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 676ac7334c0934ef4a48795858576377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevelName: Level1
-  nextLevelIndex: 0
+  _playDelay: 1
+  _endTransitionPrefab: {fileID: 3165632695732262563, guid: 5731d0c08f8a84ee1b197e0bfe303aa1,
+    type: 3}
 --- !u!1 &1160860038
 GameObject:
   m_ObjectHideFlags: 0

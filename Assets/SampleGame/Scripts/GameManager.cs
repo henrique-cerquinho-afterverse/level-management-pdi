@@ -9,23 +9,19 @@ namespace SampleGame
 {
     public class GameManager : MonoBehaviour
     {
-        // reference to player
-        private ThirdPersonCharacter _player;
-
-        // reference to goal effect
-        private GoalEffect _goalEffect;
-
-        // reference to player
-        private Objective _objective;
-
-        private bool _isGameOver;
+        [SerializeField] TransitionFader _endTransitionPrefab;
+        
         public bool IsGameOver { get { return _isGameOver; } }
-
-        private static GameManager _instance;
-
-        // instance to be used as a singleton
         public static GameManager Instance { get { return _instance; } }
-
+        
+        ThirdPersonCharacter _player;
+        GoalEffect _goalEffect;
+        Objective _objective;
+        bool _isGameOver;
+        
+        // instance to be used as a singleton
+        static GameManager _instance;
+        
         // initialize references
         private void Awake()
         {
@@ -81,8 +77,19 @@ namespace SampleGame
             {
                 _isGameOver = true;
                 _goalEffect.PlayEffect();
-                WinScreen.Open();
+                StartCoroutine(WinRoutine());
             }
+        }
+
+        IEnumerator WinRoutine()
+        {
+            TransitionFader.PlayTransition(_endTransitionPrefab);
+
+            float fadeDelay = _endTransitionPrefab == null
+                ? 0f
+                : _endTransitionPrefab.Delay + _endTransitionPrefab.FadeOnDuration;
+            yield return new WaitForSeconds(fadeDelay);
+            WinScreen.Open();
         }
 
         // check for the end game condition on each frame

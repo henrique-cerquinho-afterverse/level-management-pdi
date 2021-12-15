@@ -59,6 +59,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\LevelManagement\Scripts\Data\DataManager.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Data\JsonSaver.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Data\SaveData.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\LevelLoader.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\MenuManager.cs" />
@@ -68,10 +71,12 @@
     <Compile Include="Assets\LevelManagement\Scripts\Menus\PauseMenu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\SettingsMenu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\WinScreen.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Missions\MissionList.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Missions\MissionSpecs.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\SplashScreen.cs" />
-    <Compile Include="Assets\LevelManagement\Scripts\TransitionFader.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Utilities\DontDestroyOnLoad.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Utilities\ScreenFader.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Utilities\TransitionFader.cs" />
     <Compile Include="Assets\SampleGame\Scripts\GameManager.cs" />
     <Compile Include="Assets\SampleGame\Scripts\GoalEffect.cs" />
     <Compile Include="Assets\SampleGame\Scripts\Objective.cs" />

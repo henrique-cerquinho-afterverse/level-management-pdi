@@ -31,10 +31,10 @@ namespace LevelManagement
         {
             yield return new WaitForSeconds(_delay);
             _screenFader.FadeOff();
-            LevelLoader.LoadMainMenuLevel();
             
             // wait for fade
             yield return new WaitForSeconds(_screenFader.FadeOnDuration);
+            LevelLoader.LoadMainMenuLevel();
             
             // remove splash screen object
             Destroy(gameObject);
