@@ -173,6 +173,8 @@ MonoBehaviour:
     type: 3}
   winScreenPrefab: {fileID: 3821403599278287531, guid: b925be49fba1c407788a7c2a2dab76cb,
     type: 3}
+  levelSelectMenuPrefab: {fileID: 4266656313647151721, guid: 2c61aa0e24ec64a3886f9d4a5271b41d,
+    type: 3}
   _menuParent: {fileID: 0}
 --- !u!223 &24972751
 Canvas:

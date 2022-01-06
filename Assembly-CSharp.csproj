@@ -67,11 +67,13 @@
     <Compile Include="Assets\LevelManagement\Scripts\MenuManager.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\CreditsScreen.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\GameMenu.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Menus\LevelSelectMenu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\MainMenu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\PauseMenu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\SettingsMenu.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Menus\WinScreen.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Missions\MissionList.cs" />
+    <Compile Include="Assets\LevelManagement\Scripts\Missions\MissionSelector.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Missions\MissionSpecs.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\SplashScreen.cs" />
     <Compile Include="Assets\LevelManagement\Scripts\Utilities\DontDestroyOnLoad.cs" />
