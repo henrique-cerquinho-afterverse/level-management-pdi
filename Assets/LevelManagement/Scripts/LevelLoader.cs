@@ -18,10 +18,6 @@ namespace LevelManagement
         {
             if (levelIndex >= 0 && levelIndex < SceneManager.sceneCountInBuildSettings)
             {
-                if (levelIndex == MAIN_MENU_INDEX)
-                {
-                    MainMenu.Open();
-                }
                 SceneManager.LoadScene(levelIndex);
             }
         }
