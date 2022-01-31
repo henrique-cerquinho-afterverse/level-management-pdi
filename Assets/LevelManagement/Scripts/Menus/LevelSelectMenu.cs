@@ -63,8 +63,8 @@ namespace LevelManagement
         IEnumerator PlayMissionRoutine(string sceneName)
         {
             TransitionFader.PlayTransition(_startTransitionPrefab);
+            yield return new WaitForSeconds(_startTransitionPrefab.FadeOnDuration);
             LevelLoader.LoadLevel(sceneName);
-            yield return new WaitForSeconds(_playDelay);
             GameMenu.Open();
         }
     }

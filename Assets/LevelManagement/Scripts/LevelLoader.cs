@@ -7,7 +7,7 @@ namespace LevelManagement
 {
     public class LevelLoader : MonoBehaviour
     {
-        private static int mainMenuIndex = 1;
+        const int MAIN_MENU_INDEX = 1;
         
         public static void LoadLevel(string levelName)
         {
@@ -18,7 +18,7 @@ namespace LevelManagement
         {
             if (levelIndex >= 0 && levelIndex < SceneManager.sceneCountInBuildSettings)
             {
-                if (levelIndex == mainMenuIndex)
+                if (levelIndex == MAIN_MENU_INDEX)
                 {
                     MainMenu.Open();
                 }
@@ -44,7 +44,7 @@ namespace LevelManagement
 
         public static void LoadMainMenuLevel()
         {
-            LoadLevel(mainMenuIndex);
+            LoadLevel(MAIN_MENU_INDEX);
         }
     }
 }

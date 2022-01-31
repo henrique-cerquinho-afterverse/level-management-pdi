@@ -11,8 +11,8 @@ public class ScreenFader : MonoBehaviour
     [SerializeField] float _fadeOffDuration = 2f;
     [SerializeField] MaskableGraphic[] _graphicsToFade;
     
-    public float FadeOnDuration { get { return _fadeOnDuration; } }
-    public float FadeOffDuration { get { return _fadeOffDuration; } }
+    public float FadeOnDuration => _fadeOnDuration;
+    public float FadeOffDuration => _fadeOffDuration;
 
     void Start()
     {

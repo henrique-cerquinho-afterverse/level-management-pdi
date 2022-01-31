@@ -8,25 +8,24 @@ namespace LevelManagement
     [RequireComponent(typeof(Canvas))]
     public class MenuManager : MonoBehaviour
     {
-        [SerializeField] private MainMenu mainMenuPrefab;
-        [SerializeField] private SettingsMenu settingsMenuPrefab;
-        [SerializeField] private CreditsScreen creditsMenuPrefab;
-        [SerializeField] private GameMenu gameMenuPrefab;
-        [SerializeField] private PauseMenu pauseMenuPrefab;
-        [SerializeField] private WinScreen winScreenPrefab;
-        [SerializeField] private LevelSelectMenu levelSelectMenuPrefab;
+        [SerializeField] MainMenu mainMenuPrefab;
+        [SerializeField] SettingsMenu settingsMenuPrefab;
+        [SerializeField] CreditsScreen creditsMenuPrefab;
+        [SerializeField] GameMenu gameMenuPrefab;
+        [SerializeField] PauseMenu pauseMenuPrefab;
+        [SerializeField] WinScreen winScreenPrefab;
+        [SerializeField] LevelSelectMenu levelSelectMenuPrefab;
+        
+        [SerializeField] Transform _menuParent;
 
-        [SerializeField]
-        private Transform _menuParent;
+        Stack<Menu> _menuStack = new Stack<Menu>();
 
-        private Stack<Menu> _menuStack = new Stack<Menu>();
-
-        private static MenuManager _instance;
+        static MenuManager _instance;
 
         // instance to be used as a singleton
-        public static MenuManager Instance { get { return _instance; } }
+        public static MenuManager Instance => _instance;
 
-        private void Awake()
+        void Awake()
         {
             // allow only one instance of the singleton
             if (_instance != null)
@@ -41,7 +40,7 @@ namespace LevelManagement
             }
         }
 
-        private void OnDestroy()
+        void OnDestroy()
         {
             if (_instance == this)
             {
@@ -49,7 +48,7 @@ namespace LevelManagement
             }
         }
         
-        private void InitializeMenus()
+        void InitializeMenus()
         {
             if (_menuParent == null)
             {
@@ -106,7 +105,7 @@ namespace LevelManagement
         {
             if (_menuStack.Count == 0)
             {
-                Debug.LogWarning("you bitch");
+                Debug.LogWarning("watchu doin???");
                 return;
             }
 

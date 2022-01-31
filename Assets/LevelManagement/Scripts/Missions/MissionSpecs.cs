@@ -14,25 +14,10 @@ namespace LevelManagement.Missions
         [SerializeField] protected string _id;
         [SerializeField] protected Sprite _image;
         
-        public string Name
-        {
-            get { return _name; }
-        }
-        public string Description
-        {
-            get { return _description; }
-        }
-        public string SceneName
-        {
-            get { return _sceneName; }
-        }
-        public string Id
-        {
-            get { return _id; }
-        }
-        public Sprite Image
-        {
-            get { return _image; }
-        }
+        public string Name => _name;
+        public string Description => _description;
+        public string SceneName => _sceneName;
+        public string Id => _id;
+        public Sprite Image => _image;
     }
 }

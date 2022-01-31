@@ -8,13 +8,8 @@ namespace LevelManagement.Missions
     {
         [SerializeField] protected MissionList _missionList;
 
-        public int CurrentIndex
-        {
-            get
-            {
-                return _currentIndex;
-            }
-        }
+        public int CurrentIndex => _currentIndex;
+        
         protected int _currentIndex;
 
         public void ClampIndex()

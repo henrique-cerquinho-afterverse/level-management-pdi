@@ -7,10 +7,10 @@ namespace LevelManagement
 {
     public abstract class Menu<T>:Menu where T: Menu<T>
     {
-        private static T _instance;
+        static T _instance;
 
         // instance to be used as a singleton
-        public static T Instance { get { return _instance; } }
+        public static T Instance => _instance;
 
         // derived classes can see protected methods, but other objects can't
         protected virtual void Awake()
