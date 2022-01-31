@@ -13,18 +13,23 @@ MonoBehaviour:
   m_Name: Missions
   m_EditorClassIdentifier: 
   _missions:
-  - _name: 'Level1: Baby time'
+  - _name: 'Level 1: Baby time'
     _description: You gotta beat this one.
     _sceneName: Level1
     _id: L1
-    _image: {fileID: 21300000, guid: fb783c6a0c77e45bc90f5d128a7b2572, type: 3}
-  - _name: 'Level2: It''s getting hot in here'
-    _description: Oh my god
+    _image: {fileID: 21300000, guid: c978a4adab3ed40c3a015144e6bad620, type: 3}
+  - _name: 'Level 2: It''s getting hot in here'
+    _description: The lava lands. Once forsaken by the Revengers, these cursed lands
+      have never again seen the light of day. In the day the Broken King layed his
+      hands on the Goblet of Uldrith, only the light of the pouring magma from every
+      inch of the ground would be cast upon the scorched, deteriorated face of this
+      country. Survival may be quite impossible, unless the mix of experience and
+      sheer luck is on your side.
     _sceneName: Level2
     _id: L2
-    _image: {fileID: 21300000, guid: 2e90846b04f8141638d27f23d1888c99, type: 3}
-  - _name: 'Level3: Save me'
+    _image: {fileID: 21300000, guid: 09b718ee4969543f2906115e9c474218, type: 3}
+  - _name: 'Level 3: Save me'
     _description: Time to die
     _sceneName: Level3
     _id: L3
-    _image: {fileID: 21300000, guid: 96f7edd8ca5b943b18d091fa0fb0144d, type: 3}
+    _image: {fileID: 21300000, guid: 50195fba302b744a199a797aae53b665, type: 3}
