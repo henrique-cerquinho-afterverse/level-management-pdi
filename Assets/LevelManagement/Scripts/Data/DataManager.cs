@@ -5,6 +5,10 @@ using UnityEngine;
 
 namespace LevelManagement.Data
 {
+    /// <summary>
+    /// Implements a general Data Manager to save player prefs and all kinds of settings. Implements Save and Load methods
+    /// to control the save data as well.
+    /// </summary>
     public class DataManager : MonoBehaviour
     {
         SaveData _saveData;

@@ -284,9 +284,6 @@
  <Reference Include="TextMeshPro-1.0.55.2017.2.0b12-Editor">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Assets/TextMesh Pro/Plugins/Editor/TextMeshPro-1.0.55.2017.2.0b12-Editor.dll</HintPath>
  </Reference>
- <Reference Include="JetBrains.Rider.Unity.Editor.Plugin.Repacked">
- <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll</HintPath>
- </Reference>
  <Reference Include="log4netPlastic">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/PackageCache/com.unity.collab-proxy@1.15.7/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
  </Reference>

@@ -5,25 +5,29 @@ using System.Reflection;
 
 namespace LevelManagement
 {
+    /// <summary>
+    /// Implements a manager for all the menu types. We serialize all the different menu prefabs here and pick them up
+    /// dynamically on the initialize method. This class uses a stack to keep track of the opened menus and their order.
+    /// </summary>
     [RequireComponent(typeof(Canvas))]
     public class MenuManager : MonoBehaviour
     {
-        [SerializeField] MainMenu mainMenuPrefab;
-        [SerializeField] SettingsMenu settingsMenuPrefab;
-        [SerializeField] CreditsScreen creditsMenuPrefab;
-        [SerializeField] GameMenu gameMenuPrefab;
-        [SerializeField] PauseMenu pauseMenuPrefab;
-        [SerializeField] WinScreen winScreenPrefab;
-        [SerializeField] LevelSelectMenu levelSelectMenuPrefab;
+        [SerializeField] MainMenu _mainMenuPrefab;
+        [SerializeField] SettingsMenu _settingsMenuPrefab;
+        [SerializeField] CreditsScreen _creditsMenuPrefab;
+        [SerializeField] GameMenu _gameMenuPrefab;
+        [SerializeField] PauseMenu _pauseMenuPrefab;
+        [SerializeField] WinScreen _winScreenPrefab;
+        [SerializeField] LevelSelectMenu _levelSelectMenuPrefab;
         
         [SerializeField] Transform _menuParent;
 
+        // instance to be used as a singleton
+        public static MenuManager Instance => _instance;
+        
         Stack<Menu> _menuStack = new Stack<Menu>();
 
         static MenuManager _instance;
-
-        // instance to be used as a singleton
-        public static MenuManager Instance => _instance;
 
         void Awake()
         {
@@ -69,7 +73,7 @@ namespace LevelManagement
                 if (prefab != null)
                 {
                     Menu menuInstance = Instantiate(prefab, _menuParent);
-                    if (prefab != mainMenuPrefab)
+                    if (prefab != _mainMenuPrefab)
                     {
                         menuInstance.gameObject.SetActive(false);
                     }
@@ -81,6 +85,11 @@ namespace LevelManagement
             }
         }
 
+        /// <summary>
+        /// Called by the different kinds of menus (ergo the Menu<T> class) to open them. Pushes the opened menu to
+        /// the stack.
+        /// </summary>
+        /// <param name="menuInstance">Menu instance to be opened</param>
         public void OpenMenu(Menu menuInstance)
         {
             if (menuInstance == null)
@@ -101,6 +110,9 @@ namespace LevelManagement
             _menuStack.Push(menuInstance);
         }
 
+        /// <summary>
+        /// Closes the current menu and opens the previous menu in the stack.
+        /// </summary>
         public void CloseMenu()
         {
             if (_menuStack.Count == 0)

@@ -5,6 +5,10 @@ using SampleGame;
 
 namespace LevelManagement
 {
+    /// <summary>
+    /// Base Menu class. All menu classes will act as a singleton, having an instance of type <T>.
+    /// </summary>
+    /// <typeparam name="T">Menu Type</typeparam>
     public abstract class Menu<T>:Menu where T: Menu<T>
     {
         static T _instance;

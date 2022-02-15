@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 namespace LevelManagement
 {
+    /// <summary>
+    /// Implementes a Level manager, allowing for sequence of levels (or missions) and cycling.
+    /// </summary>
     public class LevelLoader : MonoBehaviour
     {
         const int MAIN_MENU_INDEX = 1;

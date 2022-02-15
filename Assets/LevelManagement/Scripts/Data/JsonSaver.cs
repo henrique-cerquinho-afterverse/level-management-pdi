@@ -8,13 +8,17 @@ using System.Security.Cryptography;
 
 namespace LevelManagement.Data
 {
+    /// <summary>
+    /// Implements a Json type save data manager. Used by the DataManager class for json manipulation, entryption and
+    /// loading.
+    /// </summary>
     public class JsonSaver
     {
-        static readonly string _filename = "savedata1.sav";
+        const string FILENAME = "savedata1.sav";
 
         public static string GetSaveFilename()
         {
-            return Application.persistentDataPath + "/" + _filename;
+            return Application.persistentDataPath + "/" + FILENAME;
         }
 
         public void Save(SaveData data)

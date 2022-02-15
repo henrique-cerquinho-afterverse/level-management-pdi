@@ -5,6 +5,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using Object = System.Object;
 
+/// <summary>
+/// Implements a transition screen controller, using the base ScreenFader script. Used to transition between scenes
+/// and hide potential loading freezes.
+/// </summary>
 public class TransitionFader : ScreenFader
 {
     [SerializeField] float _lifetime = 1f;

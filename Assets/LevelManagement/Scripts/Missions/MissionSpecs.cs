@@ -5,6 +5,9 @@ using UnityEngine;
 
 namespace LevelManagement.Missions
 {
+    /// <summary>
+    /// Definition of a mission, specifying the scene name for the mission scene.
+    /// </summary>
     [Serializable]
     public class MissionSpecs
     {

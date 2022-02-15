@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Implements a basic fading screen, making it able to fade on and off as necessary. 
+/// </summary>
 public class ScreenFader : MonoBehaviour
 {
     [SerializeField] protected float _solidAlpha = 1f;

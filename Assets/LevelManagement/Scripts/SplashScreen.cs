@@ -22,6 +22,9 @@ namespace LevelManagement
             _screenFader.FadeOn();
         }
 
+        /// <summary>
+        /// Fades the screen in and loads the Main Menu scene. Runs after clicking the splash screen.
+        /// </summary>
         public void FadeAndLoad()
         {
             StartCoroutine(FadeAndLoadRoutine());
