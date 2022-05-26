@@ -60,6 +60,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexShakeB.cs" />
      <Compile Include="Assets\LevelManagement\Scripts\Data\SaveData.cs" />
+     <Compile Include="Assets\Samples\Addressables\1.18.19\Addressables Utility\AddressablesUtility.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\VertexZoom.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextInfoDebugTool.cs" />
      <Compile Include="Assets\SampleGame\Scripts\Objective.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\LevelManagement\Scripts\Menus\MainMenu.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\CameraController.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark03.cs" />
+     <Compile Include="Assets\LevelManagement\Scripts\Model\MenuAsset.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextSelector_A.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\EnvMapAnimator.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_FrameRateCounter.cs" />
@@ -85,6 +87,7 @@
      <Compile Include="Assets\SampleGame\Scripts\GoalEffect.cs" />
      <Compile Include="Assets\SampleGame\Scripts\GameManager.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\SimpleScript.cs" />
+     <Compile Include="Assets\LevelManagement\Scripts\Utils\Strings\StringUtils.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_UiFrameRateCounter.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TextMeshProFloatingText.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_ExampleScript_01.cs" />
@@ -92,6 +95,8 @@
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\TMP_TextEventHandler.cs" />
      <Compile Include="Assets\LevelManagement\Scripts\Menus\WinScreen.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\WarpTextExample.cs" />
+     <Compile Include="Assets\LevelManagement\Scripts\Utils\Addressables\AddressablesUtils.cs" />
+     <Compile Include="Assets\LevelManagement\Scripts\Utils\Addressables\AddressableObjectDrawer.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\Benchmark02.cs" />
      <Compile Include="Assets\LevelManagement\Scripts\Menus\SettingsMenu.cs" />
      <Compile Include="Assets\LevelManagement\Scripts\Data\JsonSaver.cs" />
@@ -102,6 +107,7 @@
      <Compile Include="Assets\LevelManagement\Scripts\Menus\LevelSelectMenu.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\ShaderPropAnimator.cs" />
      <Compile Include="Assets\LevelManagement\Scripts\MenuManager.cs" />
+     <Compile Include="Assets\LevelManagement\Scripts\Utils\Addressables\AddressableAsset.cs" />
      <Compile Include="Assets\LevelManagement\Scripts\LevelLoader.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples\Scripts\ObjectSpin.cs" />
      <Compile Include="Assets\LevelManagement\Scripts\Utilities\TransitionFader.cs" />
@@ -720,6 +726,15 @@
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.CacheServer">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+ </Reference>
+ <Reference Include="NaughtyAttributes.Test">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/NaughtyAttributes.Test.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
@@ -734,6 +749,9 @@
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ResourceManager">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -759,6 +777,9 @@
  <Reference Include="UnityEngine.Purchasing.SecurityCore">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
  </Reference>
+ <Reference Include="NaughtyAttributes.Editor">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/NaughtyAttributes.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Purchasing.Codeless">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
  </Reference>
@@ -774,11 +795,23 @@
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
+ <Reference Include="NaughtyAttributes.Core">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Monetization">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables.Editor">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>

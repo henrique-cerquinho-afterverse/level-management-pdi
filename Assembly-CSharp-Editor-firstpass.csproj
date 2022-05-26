@@ -680,6 +680,15 @@
  <Reference Include="UnityEngine.Purchasing">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEngine.Purchasing.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.CacheServer">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.CacheServer.dll</HintPath>
+ </Reference>
+ <Reference Include="NaughtyAttributes.Test">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/NaughtyAttributes.Test.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.Addressables.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
@@ -694,6 +703,9 @@
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ResourceManager">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.ResourceManager.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
@@ -719,6 +731,9 @@
  <Reference Include="UnityEngine.Purchasing.SecurityCore">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEngine.Purchasing.SecurityCore.dll</HintPath>
  </Reference>
+ <Reference Include="NaughtyAttributes.Editor">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/NaughtyAttributes.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Purchasing.Codeless">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEngine.Purchasing.Codeless.dll</HintPath>
  </Reference>
@@ -734,11 +749,23 @@
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
+ <Reference Include="NaughtyAttributes.Core">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/NaughtyAttributes.Core.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.Monetization">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEngine.Monetization.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Addressables.Editor">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.Addressables.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEditor.Purchasing">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.Purchasing.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ScriptableBuildPipeline.Editor">
+ <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/Unity.ScriptableBuildPipeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
  <HintPath>/Users/henrique.cerquinho/Documents/personal/201-SampleGame/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>

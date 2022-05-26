@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Reflection;
+using LevelManagement.Model;
+using UnityEditor;
+using UnityEngine.AddressableAssets;
 
 namespace LevelManagement
 {
@@ -12,6 +15,8 @@ namespace LevelManagement
     [RequireComponent(typeof(Canvas))]
     public class MenuManager : MonoBehaviour
     {
+        const string INITIAL_MENU_NAME = "MainMenu";
+        
         [SerializeField] MainMenu _mainMenuPrefab;
         [SerializeField] SettingsMenu _settingsMenuPrefab;
         [SerializeField] CreditsScreen _creditsMenuPrefab;
@@ -65,21 +70,22 @@ namespace LevelManagement
             // and their values
             BindingFlags myFlags = BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.DeclaredOnly;
             FieldInfo[] fields = this.GetType().GetFields(myFlags);
-
-            foreach (FieldInfo field in fields)
+            
+            var assetGuids = AssetDatabase.FindAssets("t:" + nameof(MenuAsset));
+            foreach (var guid in assetGuids)
             {
-                Menu prefab = field.GetValue(this) as Menu;
-                
-                if (prefab != null)
+                var path = AssetDatabase.GUIDToAssetPath(guid);
+                var menuAsset = AssetDatabase.LoadAssetAtPath<MenuAsset>(path);
+                if (menuAsset != null)
                 {
-                    Menu menuInstance = Instantiate(prefab, _menuParent);
-                    if (prefab != _mainMenuPrefab)
+                    var menuInstance = menuAsset.AddressableAsset.Instantiate(_menuParent);
+                    if (!menuAsset.name.Contains(INITIAL_MENU_NAME))
                     {
                         menuInstance.gameObject.SetActive(false);
                     }
                     else
                     {
-                        OpenMenu(menuInstance);
+                        OpenMenu(menuInstance.GetComponent<Menu>());
                     }
                 }
             }
@@ -94,7 +100,7 @@ namespace LevelManagement
         {
             if (menuInstance == null)
             {
-                Debug.LogWarning("INVALID MENU BRO");
+                Debug.LogError("INVALID MENU BRO");
                 return;
             }
             
@@ -106,6 +112,7 @@ namespace LevelManagement
                 }
             }
 
+            // menuInstance.enabled = true;
             menuInstance.gameObject.SetActive(true);
             _menuStack.Push(menuInstance);
         }
