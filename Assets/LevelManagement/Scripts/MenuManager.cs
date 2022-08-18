@@ -61,15 +61,10 @@ namespace LevelManagement
         {
             if (_menuParent == null)
             {
-                GameObject menuParentObject = new GameObject("Menus");
+                var menuParentObject = new GameObject("Menus");
                 _menuParent = menuParentObject.transform;
             }
             Object.DontDestroyOnLoad(_menuParent.gameObject);
-
-            // finds fields dynamically from the given type (in this case, MenuManager) and iterates over the fields
-            // and their values
-            BindingFlags myFlags = BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.DeclaredOnly;
-            FieldInfo[] fields = this.GetType().GetFields(myFlags);
             
             var assetGuids = AssetDatabase.FindAssets("t:" + nameof(MenuAsset));
             foreach (var guid in assetGuids)
@@ -80,7 +75,7 @@ namespace LevelManagement
                 {
                     var menuInstance = menuAsset.AddressableAsset.Instantiate(_menuParent);
                     if (!menuAsset.name.Contains(INITIAL_MENU_NAME))
-                    {
+                    { 
                         menuInstance.gameObject.SetActive(false);
                     }
                     else
