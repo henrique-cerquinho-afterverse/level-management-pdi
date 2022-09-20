@@ -1,5 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using LevelManagement.Model;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -14,7 +16,7 @@ namespace LevelManagement
         
         public static void LoadLevel(string levelName)
         {
-            SceneManager.LoadScene(levelName);
+            SceneLoader.LoadScene(levelName);
         }
 
         public static void LoadLevel(int levelIndex)
@@ -31,6 +33,7 @@ namespace LevelManagement
 
         public static void LoadNextLevel()
         {
+            var scenes = EditorBuildSettings.scenes;
             int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
             int nextSceneIndex = 1;
             int sceneCount = SceneManager.sceneCountInBuildSettings;

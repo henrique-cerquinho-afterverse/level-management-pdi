@@ -17,8 +17,20 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 240457d70d9f14581afa015aea9d670f
   m_SerializeEntries:
+  - m_GUID: b521c2e6073928a4995cdcbeab21fca0
+    m_Address: Assets/SampleGame/Scenes/Resources_moved/MainMenuScene.unity
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: 239e3b357885a40399f2c4f6c10f0f79
-    m_Address: Assets/SampleGame/Scenes/SplashScreen.unity
+    m_Address: SplashScreen
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 07761bc9b97014553a6062c33a3cac39
+    m_Address: Level1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 11bbb0426e526480aac42f72af1de7d1
+    m_Address: Level2
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

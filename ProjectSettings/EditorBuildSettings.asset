@@ -5,17 +5,17 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/SampleGame/Scenes/SplashScreen.unity
+  - enabled: 0
+    path: Assets/SampleGame/Scenes/Resources_moved/SplashScreen.unity
     guid: 239e3b357885a40399f2c4f6c10f0f79
-  - enabled: 1
-    path: Assets/SampleGame/Scenes/MainMenu.unity
+  - enabled: 0
+    path: Assets/SampleGame/Scenes/Resources_moved/MainMenuScene.unity
     guid: b521c2e6073928a4995cdcbeab21fca0
-  - enabled: 1
-    path: Assets/SampleGame/Scenes/Level1.unity
+  - enabled: 0
+    path: Assets/SampleGame/Scenes/Resources_moved/Level1.unity
     guid: 07761bc9b97014553a6062c33a3cac39
-  - enabled: 1
-    path: Assets/SampleGame/Scenes/Level2.unity
+  - enabled: 0
+    path: Assets/SampleGame/Scenes/Resources_moved/Level2.unity
     guid: 11bbb0426e526480aac42f72af1de7d1
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: bc0cfc56e6e9f4fe8a90787dd99f324c,

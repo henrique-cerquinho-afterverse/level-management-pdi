@@ -102,6 +102,8 @@
      <Compile Include="Assets/TextMesh Pro/Examples/Scripts/ShaderPropAnimator.cs" />
      <Compile Include="Assets/LevelManagement/Scripts/Utilities/TransitionFader.cs" />
      <Compile Include="Assets/TextMesh Pro/Examples/Scripts/TMPro_InstructionOverlay.cs" />
+     <Compile Include="Assets/LevelManagement/Scripts/Model/SceneAddressableAsset.cs" />
+     <Compile Include="Assets/LevelManagement/Scripts/SceneLoader.cs" />
      <None Include="Assets/TextMesh Pro/Fonts/Bangers - OFL.txt" />
      <None Include="Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt" />
      <None Include="Assets/TextMesh Pro/Resources/Shaders/TMP_Bitmap-Mobile.shader" />
